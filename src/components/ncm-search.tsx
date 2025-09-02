@@ -63,24 +63,14 @@ export default function NcmSearch() {
     setError(null);
     setResult(null);
 
-    const searchPromise = intelligentProductSearch({
-      productName: values.productName,
-    });
-
-    const timeoutPromise = new Promise<never>((_, reject) =>
-      setTimeout(() => reject(new Error("Timeout")), 3000)
-    );
-
     try {
-      const searchResult = await Promise.race([searchPromise, timeoutPromise]);
+      const searchResult = await intelligentProductSearch({
+        productName: values.productName,
+      });
       setResult(searchResult);
     } catch (e: any) {
-      if (e.message === "Timeout") {
-        setError("Tempo de resposta excedido. Tente novamente.");
-      } else {
-        setError("Ocorreu um erro ao buscar o NCM. Tente novamente.");
-        console.error(e);
-      }
+      setError("Ocorreu um erro ao buscar o NCM. Tente novamente.");
+      console.error(e);
     } finally {
       setIsLoading(false);
     }
