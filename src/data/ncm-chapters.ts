@@ -31,18 +31,33 @@ export const ncmChapters: NCMChapter[] = [
   },
   {
     chapter: '03',
-    title: 'Peixes e crustáceos, moluscos e outros invertebrados aquáticos',
+    title: 'Peixes e crustáceios, moluscos e outros invertebrados aquáticos',
     ncms: [
         { code: '0302.13.00', description: 'Trutas (Salmo trutta, Oncorhynchus mykiss, etc.), frescas ou refrigeradas' },
         { code: '0306.17.10', description: 'Lagostas (Palinurus spp., Panulirus spp., Jasus spp.), congeladas' },
         { code: '0307.42.00', description: 'Lulas (Ommastrephes spp., Loligo spp., etc.), frescas ou refrigeradas' }
     ],
   },
-  { chapter: '04', title: 'Leite e lacticínios; ovos de aves; mel natural; produtos comestíveis de origem animal, não especificados nem compreendidos noutros Capítulos', ncms: [] },
+  {
+    chapter: '04',
+    title: 'Leite e lacticínios; ovos de aves; mel natural; produtos comestíveis de origem animal, não especificados nem compreendidos noutros Capítulos',
+    ncms: [
+      { code: '0401.20.10', description: 'Leite UHT (Ultra High Temperature)' },
+      { code: '0406.10.10', description: 'Queijo Mozzarella' },
+      { code: '0407.21.00', description: 'Ovos de galinha, frescos' },
+    ],
+  },
   { chapter: '05', title: 'Outros produtos de origem animal, não especificados nem compreendidos noutros Capítulos', ncms: [] },
   { chapter: '06', title: 'Plantas vivas e produtos de floricultura', ncms: [] },
   { chapter: '07', title: 'Produtos hortícolas, plantas, raízes e tubérculos, comestíveis', ncms: [] },
-  { chapter: '08', title: 'Frutas; cascas de citrinos e de melões', ncms: [] },
+  {
+    chapter: '08',
+    title: 'Frutas; cascas de citrinos e de melões',
+    ncms: [
+      { code: '0805.10.00', description: 'Laranjas, frescas ou secas' },
+      { code: '0808.10.00', description: 'Maçãs, frescas' },
+    ],
+  },
   { chapter: '09', title: 'Café, chá, mate e especiarias', ncms: [] },
   { chapter: '10', title: 'Cereais', ncms: [] },
   { chapter: '11', title: 'Produtos da indústria de moagem; malte; amidos e féculas; inulina; glúten de trigo', ncms: [] },
@@ -73,7 +88,14 @@ export const ncmChapters: NCMChapter[] = [
   { chapter: '36', title: 'Pólvoras e explosivos; artigos de pirotecnia; fósforos; ligas pirofóricas; matérias inflamáveis', ncms: [] },
   { chapter: '37', title: 'Produtos para fotografia e cinematografia', ncms: [] },
   { chapter: '38', title: 'Produtos diversos das indústrias químicas', ncms: [] },
-  { chapter: '39', title: 'Plásticos e suas obras', ncms: [] },
+  {
+    chapter: '39',
+    title: 'Plásticos e suas obras',
+    ncms: [
+      { code: '3923.21.90', description: 'Sacos de lixo de polímeros de etileno' },
+      { code: '3926.90.90', description: 'Outras obras de plástico' },
+    ],
+  },
   { chapter: '40', title: 'Borracha e suas obras', ncms: [] },
   { chapter: '41', title: 'Peles, exceto as peles com pelo, e couros', ncms: [] },
   { chapter: '42', title: 'Obras de couro; artigos de correeiro ou de seleiro; artigos de viagem, bolsas e artefatos semelhantes; obras de tripa', ncms: [] },
@@ -117,10 +139,31 @@ export const ncmChapters: NCMChapter[] = [
   { chapter: '81', title: 'Outros metais comuns; cermets; obras dessas matérias', ncms: [] },
   { chapter: '82', title: 'Ferramentas, artefatos de cutelaria e talheres, e suas partes, de metais comuns', ncms: [] },
   { chapter: '83', title: 'Obras diversas de metais comuns', ncms: [] },
-  { chapter: '84', title: 'Reatores nucleares, caldeiras, máquinas, aparelhos e instrumentos mecânicos, e suas partes', ncms: [] },
-  { chapter: '85', title: 'Máquinas, aparelhos e materiais elétricos, e suas partes; aparelhos de gravação ou de reprodução de som, aparelhos de gravação ou de reprodução de imagens e de som em televisão, e suas partes e acessórios', ncms: [] },
+  {
+    chapter: '84',
+    title: 'Reatores nucleares, caldeiras, máquinas, aparelhos e instrumentos mecânicos, e suas partes',
+    ncms: [
+      { code: '8471.30.00', description: 'Máquinas automáticas para processamento de dados, portáteis (laptops, notebooks)' },
+      { code: '8471.50.10', description: 'Unidades de processamento de pequeno porte' },
+    ],
+  },
+  {
+    chapter: '85',
+    title: 'Máquinas, aparelhos e materiais elétricos, e suas partes; aparelhos de gravação ou de reprodução de som, aparelhos de gravação ou de reprodução de imagens e de som em televisão, e suas partes e acessórios',
+    ncms: [
+      { code: '8517.13.00', description: 'Telefones inteligentes (smartphones)' },
+      { code: '8528.72.00', description: 'Aparelhos receptores de televisão' },
+    ],
+  },
   { chapter: '86', title: 'Veículos e material para vias férreas ou semelhantes, e suas partes; aparelhos mecânicos (incluindo os eletromecânicos) de sinalização para vias de comunicação', ncms: [] },
-  { chapter: '87', title: 'Veículos automóveis, tratores, ciclos e outros veículos terrestres, suas partes e acessórios', ncms: [] },
+  {
+    chapter: '87',
+    title: 'Veículos automóveis, tratores, ciclos e outros veículos terrestres, suas partes e acessórios',
+    ncms: [
+      { code: '8703.23.10', description: 'Automóveis de passageiros com motor de pistão, de cilindrada > 1.500 cm3, mas <= 3.000 cm3' },
+      { code: '8708.99.90', description: 'Outras partes e acessórios de veículos automóveis' },
+    ],
+  },
   { chapter: '88', title: 'Aeronaves e aparelhos espaciais, e suas partes', ncms: [] },
   { chapter: '89', title: 'Embarcações e estruturas flutuantes', ncms: [] },
   { chapter: '90', title: 'Instrumentos e aparelhos de óptica, de fotografia, de cinematografia, de medida, de controle ou de precisão; instrumentos e aparelhos médico-cirúrgicos; suas partes e acessórios', ncms: [] },
