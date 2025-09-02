@@ -10,72 +10,102 @@ export type NCMChapter = {
 };
 
 export const ncmChapters: NCMChapter[] = [
-  {
-    chapter: '01',
-    title: 'Animais vivos',
-    ncms: [
-      {
-        code: '0101.21.00',
-        description: 'Reprodutores de raça pura',
-      },
-      {
-        code: '0101.29.00',
-        description: 'Outros cavalos',
-      },
-      {
-        code: '0102.21.10',
-        description: 'Prenhes ou com cria ao pé',
-      },
-    ],
-  },
-  {
-    chapter: '02',
-    title: 'Carnes e miudezas, comestíveis',
-    ncms: [
-      {
-        code: '0201.10.00',
-        description: 'Carcaças e meias-carcaças de bovinos, frescas ou refrigeradas',
-      },
-      {
-        code: '0207.11.00',
-        description: 'Não cortadas em pedaços, frescas ou refrigeradas (Galo/Galinha)',
-      },
-    ],
-  },
-  {
-    chapter: '84',
-    title: 'Reatores nucleares, caldeiras, máquinas, aparelhos e instrumentos mecânicos, e suas partes',
-    ncms: [
-        {
-            code: '8471.30.12',
-            description: 'De peso inferior a 3, 5 kg, com teclado alfanumérico de no mínimo 70 teclas e com uma tela de área não superior a 140 cm2'
-        },
-        {
-            code: '8471.50.10',
-            description: 'De pequena capacidade, baseadas em microprocessadores, com capacidade de instalação, dentro do mesmo gabinete, de unidades de memória da subposição 8471.70, podendo conter múltiplos conectores de expansão (slots), e valor FOB inferior ou igual a US$ 12.500,00, por unidade'
-        },
-        {
-            code: '8473.30.41',
-            description: 'Placas-mãe (mother boards)'
-        }
-    ]
-  },
-   {
-    chapter: '90',
-    title: 'Instrumentos e aparelhos de óptica, de fotografia, de cinematografia, de medida, de controle ou de precisão; instrumentos e aparelhos médico-cirúrgicos; suas partes e acessórios',
-    ncms: [
-        {
-            code: '9006.53.20',
-            description: 'Outras, para câmeras fotográficas'
-        },
-        {
-            code: '9025.11.10',
-            description: 'Termômetros clínicos'
-        },
-        {
-            code: '9026.20.90',
-            description: 'Outros manômetros'
-        }
-    ]
-  }
+  { chapter: '01', title: 'Animais vivos', ncms: [] },
+  { chapter: '02', title: 'Carnes e miudezas, comestíveis', ncms: [] },
+  { chapter: '03', title: 'Peixes e crustáceos, moluscos e outros invertebrados aquáticos', ncms: [] },
+  { chapter: '04', title: 'Leite e lacticínios; ovos de aves; mel natural; produtos comestíveis de origem animal, não especificados nem compreendidos noutros Capítulos', ncms: [] },
+  { chapter: '05', title: 'Outros produtos de origem animal, não especificados nem compreendidos noutros Capítulos', ncms: [] },
+  { chapter: '06', title: 'Plantas vivas e produtos de floricultura', ncms: [] },
+  { chapter: '07', title: 'Produtos hortícolas, plantas, raízes e tubérculos, comestíveis', ncms: [] },
+  { chapter: '08', title: 'Frutas; cascas de citrinos e de melões', ncms: [] },
+  { chapter: '09', title: 'Café, chá, mate e especiarias', ncms: [] },
+  { chapter: '10', title: 'Cereais', ncms: [] },
+  { chapter: '11', title: 'Produtos da indústria de moagem; malte; amidos e féculas; inulina; glúten de trigo', ncms: [] },
+  { chapter: '12', title: 'Sementes e frutos oleaginosos; grãos, sementes e frutos diversos; plantas industriais ou medicinais; palhas e forragens', ncms: [] },
+  { chapter: '13', title: 'Gomas, resinas e outros sucos e extratos vegetais', ncms: [] },
+  { chapter: '14', title: 'Matérias para entrançar e outros produtos de origem vegetal, não especificados nem compreendidos noutros Capítulos', ncms: [] },
+  { chapter: '15', title: 'Gorduras e óleos animais, vegetais ou de origem microbiana e produtos da sua dissociação; gorduras alimentícias elaboradas; ceras de origem animal ou vegetal', ncms: [] },
+  { chapter: '16', title: 'Preparações de carne, de peixes, de crustáceos, de moluscos ou de outros invertebrados aquáticos, ou de insetos', ncms: [] },
+  { chapter: '17', title: 'Açúcares e produtos de confeitaria', ncms: [] },
+  { chapter: '18', title: 'Cacau e suas preparações', ncms: [] },
+  { chapter: '19', title: 'Preparações à base de cereais, de farinhas, de amidos, de féculas ou de leite; produtos de pastelaria', ncms: [] },
+  { chapter: '20', title: 'Preparações de produtos hortícolas, de frutas ou de outras partes de plantas', ncms: [] },
+  { chapter: '21', title: 'Preparações alimentícias diversas', ncms: [] },
+  { chapter: '22', title: 'Bebidas, líquidos alcoólicos e vinagres', ncms: [] },
+  { chapter: '23', title: 'Resíduos e desperdícios das indústrias alimentares; alimentos preparados para animais', ncms: [] },
+  { chapter: '24', title: 'Tabaco e seus sucedâneos manufaturados; produtos, mesmo com nicotina, destinados à inalação sem combustão; outros produtos que contenham nicotina destinados à absorção da nicotina pelo corpo humano', ncms: [] },
+  { chapter: '25', title: 'Sal; enxofre; terras e pedras; gesso, cal e cimento', ncms: [] },
+  { chapter: '26', title: 'Minérios, escórias e cinzas', ncms: [] },
+  { chapter: '27', title: 'Combustíveis minerais, óleos minerais e produtos da sua destilação; matérias betuminosas; ceras minerais', ncms: [] },
+  { chapter: '28', title: 'Produtos químicos inorgânicos; compostos inorgânicos ou orgânicos de metais preciosos, de elementos radioativos, de metais das terras raras ou de isótopos', ncms: [] },
+  { chapter: '29', title: 'Produtos químicos orgânicos', ncms: [] },
+  { chapter: '30', title: 'Produtos farmacêuticos', ncms: [] },
+  { chapter: '31', title: 'Adubos ou fertilizantes', ncms: [] },
+  { chapter: '32', title: 'Extratos tanantes e tintoriais; taninos e seus derivados; pigmentos e outras matérias corantes; tintas e vernizes; mástiques; tintas de escrever', ncms: [] },
+  { chapter: '33', title: 'Óleos essenciais e resinoides; produtos de perfumaria ou de toucador preparados e preparações cosméticas', ncms: [] },
+  { chapter: '34', title: 'Sabões, agentes orgânicos de superfície, preparações para lavagem, preparações lubrificantes, ceras artificiais, ceras preparadas, produtos de conservação e limpeza, velas e artigos semelhantes, massas ou pastas para modelar, “ceras para dentistas” e composições para dentistas à base de gesso', ncms: [] },
+  { chapter: '35', title: 'Matérias albuminoides; produtos à base de amidos ou de féculas modificados; colas; enzimas', ncms: [] },
+  { chapter: '36', title: 'Pólvoras e explosivos; artigos de pirotecnia; fósforos; ligas pirofóricas; matérias inflamáveis', ncms: [] },
+  { chapter: '37', title: 'Produtos para fotografia e cinematografia', ncms: [] },
+  { chapter: '38', title: 'Produtos diversos das indústrias químicas', ncms: [] },
+  { chapter: '39', title: 'Plásticos e suas obras', ncms: [] },
+  { chapter: '40', title: 'Borracha e suas obras', ncms: [] },
+  { chapter: '41', title: 'Peles, exceto as peles com pelo, e couros', ncms: [] },
+  { chapter: '42', title: 'Obras de couro; artigos de correeiro ou de seleiro; artigos de viagem, bolsas e artefatos semelhantes; obras de tripa', ncms: [] },
+  { chapter: '43', title: 'Peles com pelo e suas obras; peles com pelo artificiais', ncms: [] },
+  { chapter: '44', title: 'Madeira, carvão vegetal e obras de madeira', ncms: [] },
+  { chapter: '45', title: 'Cortiça e suas obras', ncms: [] },
+  { chapter: '46', title: 'Obras de espartaria ou de cestaria', ncms: [] },
+  { chapter: '47', title: 'Pastas de madeira ou de outras matérias fibrosas celulósicas; papel ou cartão para reciclar (desperdícios e aparas)', ncms: [] },
+  { chapter: '48', title: 'Papel e cartão; obras de pasta de celulose, de papel ou de cartão', ncms: [] },
+  { chapter: '49', title: 'Livros, jornais, gravuras e outros produtos das indústrias gráficas; textos manuscritos ou datilografados e plantas', ncms: [] },
+  { chapter: '50', title: 'Seda', ncms: [] },
+  { chapter: '51', title: 'Lã, pelos finos ou grosseiros; fios e tecidos de crina', ncms: [] },
+  { chapter: '52', title: 'Algodão', ncms: [] },
+  { chapter: '53', title: 'Outras fibras têxteis vegetais; fios de papel e tecidos de fios de papel', ncms: [] },
+  { chapter: '54', title: 'Filamentos sintéticos ou artificiais; lâminas e formas semelhantes de matérias têxteis sintéticas ou artificiais', ncms: [] },
+  { chapter: '55', title: 'Fibras sintéticas ou artificiais, descontínuas', ncms: [] },
+  { chapter: '56', title: 'Pastas (ouates), feltros e falsos tecidos; fios especiais; cordéis, cordas e cabos; artigos de cordoaria', ncms: [] },
+  { chapter: '57', title: 'Tapetes e outros revestimentos para pisos, de matérias têxteis', ncms: [] },
+  { chapter: '58', title: 'Tecidos especiais; tecidos tufados; rendas; tapeçarias; passamanarias; bordados', ncms: [] },
+  { chapter: '59', title: 'Tecidos impregnados, revestidos, recobertos ou estratificados; artigos para usos técnicos de matérias têxteis', ncms: [] },
+  { chapter: '60', title: 'Tecidos de malha', ncms: [] },
+  { chapter: '61', title: 'Vestuário e seus acessórios, de malha', ncms: [] },
+  { chapter: '62', title: 'Vestuário e seus acessórios, exceto de malha', ncms: [] },
+  { chapter: '63', title: 'Outros artefatos têxteis confeccionados; sortidos; artefatos de matérias têxteis, calçados, chapéus e artefatos de uso semelhante, usados; trapos', ncms: [] },
+  { chapter: '64', title: 'Calçados, polainas e artefatos semelhantes; suas partes', ncms: [] },
+  { chapter: '65', title: 'Chapéus e suas partes', ncms: [] },
+  { chapter: '66', title: 'Guarda-chuvas, sombrinhas, guarda-sóis, bengalas, bengalas-assentos, chicotes, e suas partes', ncms: [] },
+  { chapter: '67', title: 'Penas e penugem preparadas e suas obras; flores artificiais; obras de cabelo', ncms: [] },
+  { chapter: '68', title: 'Obras de pedra, gesso, cimento, amianto, mica ou de matérias semelhantes', ncms: [] },
+  { chapter: '69', title: 'Produtos cerâmicos', ncms: [] },
+  { chapter: '70', title: 'Vidro e suas obras', ncms: [] },
+  { chapter: '71', title: 'Pérolas naturais ou cultivadas, pedras preciosas ou semipreciosas e semelhantes, metais preciosos, metais folheados ou chapeados de metais preciosos (plaquê), e suas obras; bijuterias; moedas', ncms: [] },
+  { chapter: '72', title: 'Ferro fundido, ferro e aço', ncms: [] },
+  { chapter: '73', title: 'Obras de ferro fundido, ferro ou aço', ncms: [] },
+  { chapter: '74', title: 'Cobre e suas obras', ncms: [] },
+  { chapter: '75', title: 'Níquel e suas obras', ncms: [] },
+  { chapter: '76', title: 'Alumínio e suas obras', ncms: [] },
+  { chapter: '78', title: 'Chumbo e suas obras', ncms: [] },
+  { chapter: '79', title: 'Zinco e suas obras', ncms: [] },
+  { chapter: '80', title: 'Estanho e suas obras', ncms: [] },
+  { chapter: '81', title: 'Outros metais comuns; cermets; obras dessas matérias', ncms: [] },
+  { chapter: '82', title: 'Ferramentas, artefatos de cutelaria e talheres, e suas partes, de metais comuns', ncms: [] },
+  { chapter: '83', title: 'Obras diversas de metais comuns', ncms: [] },
+  { chapter: '84', title: 'Reatores nucleares, caldeiras, máquinas, aparelhos e instrumentos mecânicos, e suas partes', ncms: [] },
+  { chapter: '85', title: 'Máquinas, aparelhos e materiais elétricos, e suas partes; aparelhos de gravação ou de reprodução de som, aparelhos de gravação ou de reprodução de imagens e de som em televisão, e suas partes e acessórios', ncms: [] },
+  { chapter: '86', title: 'Veículos e material para vias férreas ou semelhantes, e suas partes; aparelhos mecânicos (incluindo os eletromecânicos) de sinalização para vias de comunicação', ncms: [] },
+  { chapter: '87', title: 'Veículos automóveis, tratores, ciclos e outros veículos terrestres, suas partes e acessórios', ncms: [] },
+  { chapter: '88', title: 'Aeronaves e aparelhos espaciais, e suas partes', ncms: [] },
+  { chapter: '89', title: 'Embarcações e estruturas flutuantes', ncms: [] },
+  { chapter: '90', title: 'Instrumentos e aparelhos de óptica, de fotografia, de cinematografia, de medida, de controle ou de precisão; instrumentos e aparelhos médico-cirúrgicos; suas partes e acessórios', ncms: [] },
+  { chapter: '91', title: 'Aparelhos de relojoaria e suas partes', ncms: [] },
+  { chapter: '92', title: 'Instrumentos musicais; suas partes e acessórios', ncms: [] },
+  { chapter: '93', title: 'Armas e munições; suas partes e acessórios', ncms: [] },
+  { chapter: '94', title: 'Móveis; mobiliário médico-cirúrgico; colchões, almofadas e semelhantes; aparelhos de iluminação não especificados nem compreendidos noutros Capítulos; anúncios, cartazes e tabuletas, luminosos e artigos semelhantes; construções pré-fabricadas', ncms: [] },
+  { chapter: '95', title: 'Brinquedos, jogos, artigos para divertimento ou para esporte; suas partes e acessórios', ncms: [] },
+  { chapter: '96', title: 'Obras diversas', ncms: [] },
+  { chapter: '97', title: 'Objetos de arte, de coleção e antiguidades', ncms: [] },
+  { chapter: '98', title: 'Operações especiais', ncms: [] },
+  { chapter: '99', title: 'Capítulo 99', ncms: [] }
 ];
