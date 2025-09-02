@@ -24,16 +24,23 @@ export default function NcmChapters() {
           <AccordionItem
             value={`chapter-${chapter.chapter}`}
             key={chapter.chapter}
+            disabled={chapter.ncms.length === 0}
+            className="relative"
           >
-            <AccordionTrigger className="text-left text-base md:text-lg hover:no-underline">
+            <AccordionTrigger className="text-left text-base md:text-lg hover:no-underline disabled:opacity-50 disabled:cursor-not-allowed">
               Capítulo {chapter.chapter}: {chapter.title}
+              {chapter.ncms.length === 0 && (
+                <span className="absolute right-10 text-xs text-muted-foreground font-normal">Sem itens</span>
+              )}
             </AccordionTrigger>
             <AccordionContent>
-              <div className="space-y-4 divide-y divide-border pt-2">
-                {chapter.ncms.map((ncm) => (
-                  <NcmItem ncm={ncm} key={ncm.code} />
-                ))}
-              </div>
+              {chapter.ncms.length > 0 ? (
+                <div className="space-y-4 divide-y divide-border pt-2">
+                  {chapter.ncms.map((ncm) => (
+                    <NcmItem ncm={ncm} key={ncm.code} />
+                  ))}
+                </div>
+              ) : null}
             </AccordionContent>
           </AccordionItem>
         ))}
