@@ -1,3 +1,4 @@
+
 export type NCM = {
   code: string;
   description: string;
@@ -10,9 +11,33 @@ export type NCMChapter = {
 };
 
 export const ncmChapters: NCMChapter[] = [
-  { chapter: '01', title: 'Animais vivos', ncms: [] },
-  { chapter: '02', title: 'Carnes e miudezas, comestíveis', ncms: [] },
-  { chapter: '03', title: 'Peixes e crustáceos, moluscos e outros invertebrados aquáticos', ncms: [] },
+  {
+    chapter: '01',
+    title: 'Animais vivos',
+    ncms: [
+      { code: '0101.21.00', description: 'Cavalos reprodutores de raça pura' },
+      { code: '0102.21.10', description: 'Gado bovino doméstico, reprodutor de raça pura, prenhe ou com cria ao pé' },
+      { code: '0105.11.00', description: 'Aves da espécie Gallus domesticus (galos e galinhas), de peso não superior a 185g' },
+    ],
+  },
+  {
+    chapter: '02',
+    title: 'Carnes e miudezas, comestíveis',
+    ncms: [
+      { code: '0201.10.00', description: 'Carcaças e meias-carcaças de bovino, frescas ou refrigeradas' },
+      { code: '0203.11.00', description: 'Carcaças e meias-carcaças de suíno, frescas ou refrigeradas' },
+      { code: '0207.12.00', description: 'Carnes de galos e galinhas, não cortadas em pedaços, congeladas' },
+    ],
+  },
+  {
+    chapter: '03',
+    title: 'Peixes e crustáceos, moluscos e outros invertebrados aquáticos',
+    ncms: [
+        { code: '0302.13.00', description: 'Trutas (Salmo trutta, Oncorhynchus mykiss, etc.), frescas ou refrigeradas' },
+        { code: '0306.17.10', description: 'Lagostas (Palinurus spp., Panulirus spp., Jasus spp.), congeladas' },
+        { code: '0307.42.00', description: 'Lulas (Ommastrephes spp., Loligo spp., etc.), frescas ou refrigeradas' }
+    ],
+  },
   { chapter: '04', title: 'Leite e lacticínios; ovos de aves; mel natural; produtos comestíveis de origem animal, não especificados nem compreendidos noutros Capítulos', ncms: [] },
   { chapter: '05', title: 'Outros produtos de origem animal, não especificados nem compreendidos noutros Capítulos', ncms: [] },
   { chapter: '06', title: 'Plantas vivas e produtos de floricultura', ncms: [] },
