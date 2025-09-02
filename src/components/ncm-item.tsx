@@ -16,7 +16,6 @@ import {
 } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
 import { Card, CardContent } from "./ui/card";
-import { AnimatePresence, motion } from "framer-motion";
 
 type NcmItemProps = {
   ncm: NCM;
@@ -66,17 +65,17 @@ export default function NcmItem({ ncm }: NcmItemProps) {
 
   return (
     <div className="pt-4 first:pt-0">
-      <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <p className="font-mono text-lg text-accent">{ncm.code}</p>
-          <p className="text-muted-foreground">{ncm.description}</p>
+      <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <div className="w-full sm:w-auto">
+          <p className="font-mono text-base md:text-lg text-accent">{ncm.code}</p>
+          <p className="text-sm md:text-base text-muted-foreground">{ncm.description}</p>
         </div>
         <div className="flex w-full shrink-0 gap-2 sm:w-auto">
           <Button
             variant="outline"
             size="sm"
             onClick={handleCopy}
-            className="w-1/2 sm:w-auto"
+            className="w-full sm:w-auto"
           >
             {isCopied ? (
               <Check className="mr-2 h-4 w-4" />
@@ -90,7 +89,7 @@ export default function NcmItem({ ncm }: NcmItemProps) {
             size="sm"
             onClick={handleGetDetails}
             disabled={isLoading}
-            className="w-1/2 sm:w-auto"
+            className="w-full sm:w-auto"
           >
             {isLoading ? (
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />

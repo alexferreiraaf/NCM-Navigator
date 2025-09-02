@@ -92,7 +92,7 @@ export default function NcmSearch() {
     <section>
       <Card>
         <CardHeader>
-          <CardTitle className="flex items-center gap-2 text-2xl">
+          <CardTitle className="flex items-center gap-2 text-xl md:text-2xl">
             Busca Inteligente de Produtos
           </CardTitle>
           <CardDescription>
@@ -149,7 +149,7 @@ export default function NcmSearch() {
           {result && (
             <Card className="mt-6 bg-secondary">
               <CardHeader>
-                <CardTitle className="flex items-center justify-between">
+                <CardTitle className="flex flex-col items-start gap-2 text-lg sm:flex-row sm:items-center sm:justify-between">
                   <span>Resultado da Busca</span>
                   <Button
                     variant="ghost"
@@ -171,7 +171,7 @@ export default function NcmSearch() {
                   <p className="text-sm font-semibold text-muted-foreground">
                     Código NCM
                   </p>
-                  <p className="font-mono text-2xl text-accent">
+                  <p className="font-mono text-xl md:text-2xl text-accent">
                     {result.ncmCode}
                   </p>
                 </div>

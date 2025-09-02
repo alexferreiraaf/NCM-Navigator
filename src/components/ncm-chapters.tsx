@@ -25,7 +25,7 @@ export default function NcmChapters() {
             value={`chapter-${chapter.chapter}`}
             key={chapter.chapter}
           >
-            <AccordionTrigger className="text-left text-lg hover:no-underline">
+            <AccordionTrigger className="text-left text-base md:text-lg hover:no-underline">
               Capítulo {chapter.chapter}: {chapter.title}
             </AccordionTrigger>
             <AccordionContent>
