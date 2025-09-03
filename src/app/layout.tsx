@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'NCM Navigator',
   description:
     'Sua ferramenta inteligente para navegar na Nomenclatura Comum do Mercosul.',
+  manifest: '/manifest.json',
 };
 
 export default function RootLayout({
@@ -16,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="dark">
       <head>
+        <meta name="theme-color" content="#6366F1" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
