@@ -1,12 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain-circuit">
-    <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.5 3.765l.001.124a3 3 0 1 0 5.997-.125 4 4 0 0 0 2.5-3.765l-.001-.124Z"/>
-    <path d="M12 13a3 3 0 1 0-5.997.125 4 4 0 0 0-2.5 3.765l.001.124a3 3 0 1 0 5.997-.125 4 4 0 0 0 2.5-3.765l-.001-.124Z"/>
-    <path d="M18 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.5 3.765l.001.124a3 3 0 1 0 5.997-.125 4 4 0 0 0 2.5-3.765l-.001-.124Z"/>
-    <path d="M18 13a3 3 0 1 0-5.997.125 4 4 0 0 0-2.5 3.765l.001.124a3 3 0 1 0 5.997-.125 4 4  0 0 0 2.5-3.765l-.001-.124Z"/>
-    <path d="M12 9.5v-1"/>
-    <path d="M18 9.5v-1"/>
-    <path d="M6 9.5v-1"/>
-    <path d="M12 17.5v-1"/>
-    <path d="M18 17.5v-1"/>
-    <path d="M6 17.5v-1"/>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="512" height="512" rx="85.3333" fill="url(#paint0_linear_1_2)"/>
+<path d="M397.333 189.333V173.333H245.333M330.667 258.667H314.667V189.333H266.667M314.667 328V258.667M245.333 328V258.667M178.667 328V258.667H245.333" stroke="#E5E7EB" stroke-width="10.6667" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M245.333 258.667V189.333H178.667V242.667" stroke="#9CA3AF" stroke-width="10.6667" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="85" y="341" font-family="Arial, sans-serif" font-size="170" font-weight="bold" fill="#93C5FD">N</text>
+<text x="197" y="341" font-family="Arial, sans-serif" font-size="170" font-weight="bold" fill="#93C5FD">C</text>
+<text x="325" y="341" font-family="Arial, sans-serif" font-size="170" font-weight="bold" fill="#93C5FD">M</text>
+<defs>
+<linearGradient id="paint0_linear_1_2" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3B3B9A"/>
+<stop offset="1" stop-color="#C43B9A"/>
+</linearGradient>
+</defs>
 </svg>
